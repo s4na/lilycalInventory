@@ -8,12 +8,14 @@ namespace jp.lilxyzw.lilycalinventory
 
     internal static class LilToonFixLightingMenu
     {
-        private const string MENU_PATH = "Tools/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
-        private const string MENU_PATH_GAMEOBJECT = "GameObject/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
+        private const string MENU_PATH = "Tools/lilToon/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
+        private const string MENU_PATH_GAMEOBJECT = "GameObject/lilToon/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
         private const string UNDO_NAME = "Add [lilToon] Fix Lighting Prefab";
+        // lilToon Fix lighting is priority 21, so use 20 to appear just above it.
+        private const int MENU_PRIORITY = 20;
 
-        [MenuItem(MENU_PATH)]
-        [MenuItem(MENU_PATH_GAMEOBJECT)]
+        [MenuItem(MENU_PATH, false, MENU_PRIORITY)]
+        [MenuItem(MENU_PATH_GAMEOBJECT, false, MENU_PRIORITY)]
         private static void AddFixLightingPrefab()
         {
             var avatarRoot = GetAvatarRootFromSelection();
@@ -48,8 +50,8 @@ namespace jp.lilxyzw.lilycalinventory
             Selection.activeGameObject = instance;
         }
 
-        [MenuItem(MENU_PATH, true)]
-        [MenuItem(MENU_PATH_GAMEOBJECT, true)]
+        [MenuItem(MENU_PATH, true, MENU_PRIORITY)]
+        [MenuItem(MENU_PATH_GAMEOBJECT, true, MENU_PRIORITY)]
         private static bool AddFixLightingPrefabValidate()
         {
             return GetAvatarRootFromSelection() != null;
