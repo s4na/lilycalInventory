@@ -8,8 +8,8 @@ namespace jp.lilxyzw.lilycalinventory
 
     internal static class LilToonFixLightingMenu
     {
-        private const string MENU_PATH = "Tools/lilToon/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
-        private const string MENU_PATH_GAMEOBJECT = "GameObject/lilToon/lilycalInventory/[lilToon] Fix Lighting (Add Prefab)";
+        private const string MENU_PATH = "Tools/lilToon/[Game Object] Fix Lighting (Prefab)";
+        private const string MENU_PATH_GAMEOBJECT = "GameObject/lilToon/[Game Object] Fix Lighting (Prefab)";
         private const string UNDO_NAME = "Add [lilToon] Fix Lighting Prefab";
         // lilToon Fix lighting is priority 21, so use 20 to appear just above it.
         private const int MENU_PRIORITY = 20;
