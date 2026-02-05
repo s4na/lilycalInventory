@@ -12,7 +12,7 @@ namespace jp.lilxyzw.lilycalinventory
         private const string MENU_PATH_GAMEOBJECT = "GameObject/lilToon/[Game Object] Fix Lighting (Prefab)";
         private const string UNDO_NAME = "Add [lilToon] Fix Lighting Prefab";
         // lilToon Fix lighting is priority 21, so use 20 to appear just above it.
-        private const int MENU_PRIORITY = 20;
+        private const int MENU_PRIORITY = 10;
 
         [MenuItem(MENU_PATH, false, MENU_PRIORITY)]
         [MenuItem(MENU_PATH_GAMEOBJECT, false, MENU_PRIORITY)]
