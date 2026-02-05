@@ -54,7 +54,7 @@ namespace jp.lilxyzw.lilycalinventory
         [MenuItem(MENU_PATH_GAMEOBJECT, true, MENU_PRIORITY)]
         private static bool AddFixLightingPrefabValidate()
         {
-            return GetAvatarRootFromSelection() != null;
+            return Selection.activeGameObject != null;
         }
 
         private static Transform GetAvatarRootFromSelection()
