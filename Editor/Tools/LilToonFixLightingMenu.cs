@@ -40,7 +40,7 @@ namespace jp.lilxyzw.lilycalinventory
                 return;
             }
 
-            var instance = PrefabUtility.InstantiatePrefab(prefab, avatarRoot.scene) as GameObject;
+            var instance = PrefabUtility.InstantiatePrefab(prefab, avatarRoot.gameObject.scene) as GameObject;
             if(!instance) return;
 
             Undo.RegisterCreatedObjectUndo(instance, UNDO_NAME);
