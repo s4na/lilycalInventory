@@ -16,5 +16,6 @@ namespace jp.lilxyzw.lilycalinventory.runtime
         internal const string GUID_ICON_NEXT = "defba5627489c4648afe871f388469b1";
         internal const string GUID_LOCALIZATION = "d54616bccdc07254a998850242066cc6";
         internal const string GUID_PACKAGE = "38b330de5f5bc1148a6eace5583dbb77";
+        internal const string GUID_LILTOON_FIX_LIGHTING_PREFAB = "868b7e2c985c5904a9bbe1beb37a5e9e";
     }
 }
